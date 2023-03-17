@@ -61,6 +61,28 @@ function Header() {
 					<span class="header__best-text-accent">Лучший</span> Онлайн&nbsp;букмекер
 				</div>
 			</div>
+			<nav className="header__nav">
+				<menu class="header__nav-menu">
+					<li class="header__nav-item">
+						<Link className="header__nav-link header__nav-link--active" to="/">Спорт</Link>
+					</li>
+					<li class="header__nav-item">
+						<Link className="header__nav-link" to="/">Киберспорт</Link>
+					</li>
+					<li class="header__nav-item">
+						<Link className="header__nav-link" to="/">Казино</Link>
+					</li>
+					<li class="header__nav-item">
+						<Link className="header__nav-link" to="/">TV Ставки</Link>
+					</li>
+					<li class="header__nav-item">
+						<Link className="header__nav-link" to="/">Виртуальный спорт</Link>
+					</li>
+					<li class="header__nav-item">
+						<Link className="header__nav-link" to="/">Акции</Link>
+					</li>
+				</menu>
+			</nav>
 		</div>	
 	</header>
   );
