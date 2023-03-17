@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Dropdown from '../utils/Dropdown';
+
+
+import HeaderBest from '../images/header-best.png';
 
 function Header() {
 
@@ -31,65 +33,36 @@ function Header() {
   });
 
   return (
-    <header className="absolute w-full z-30">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-20">
-
-          {/* Site branding */}
-          <div className="shrink-0 mr-4">
-            {/* Logo */}
-            <Link to="/" className="block" aria-label="Cruip">
-              <svg className="w-8 h-8 fill-current text-purple-600" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                <path d="M31.952 14.751a260.51 260.51 0 00-4.359-4.407C23.932 6.734 20.16 3.182 16.171 0c1.634.017 3.21.28 4.692.751 3.487 3.114 6.846 6.398 10.163 9.737.493 1.346.811 2.776.926 4.262zm-1.388 7.883c-2.496-2.597-5.051-5.12-7.737-7.471-3.706-3.246-10.693-9.81-15.736-7.418-4.552 2.158-4.717 10.543-4.96 16.238A15.926 15.926 0 010 16C0 9.799 3.528 4.421 8.686 1.766c1.82.593 3.593 1.675 5.038 2.587 6.569 4.14 12.29 9.71 17.792 15.57-.237.94-.557 1.846-.952 2.711zm-4.505 5.81a56.161 56.161 0 00-1.007-.823c-2.574-2.054-6.087-4.805-9.394-4.044-3.022.695-4.264 4.267-4.97 7.52a15.945 15.945 0 01-3.665-1.85c.366-3.242.89-6.675 2.405-9.364 2.315-4.107 6.287-3.072 9.613-1.132 3.36 1.96 6.417 4.572 9.313 7.417a16.097 16.097 0 01-2.295 2.275z" />
-              </svg>
-            </Link>
-          </div>
-
-          {/* Desktop navigation */}
-          <nav className="hidden md:flex md:grow">
-
-            {/* Desktop sign in links */}
-            <ul className="flex grow justify-end flex-wrap items-center">
-              <li>
-                <Link to="/signin" className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out">Sign in</Link>
-              </li>
-              <li>
-                <Link to="/signup" className="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3">Sign up</Link>
-              </li>
-            </ul>
-
-          </nav>
-
-          {/* Mobile menu */}
-          <div className="md:hidden">
-
-            {/* Hamburger button */}
-            <button ref={trigger} className={`hamburger ${mobileNavOpen && 'active'}`} aria-controls="mobile-nav" aria-expanded={mobileNavOpen} onClick={() => setMobileNavOpen(!mobileNavOpen)}>
-              <span className="sr-only">Menu</span>
-              <svg className="w-6 h-6 fill-current text-gray-300 hover:text-gray-200 transition duration-150 ease-in-out" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <rect y="4" width="24" height="2" rx="1" />
-                <rect y="11" width="24" height="2" rx="1" />
-                <rect y="18" width="24" height="2" rx="1" />
-              </svg>
-            </button>
-
-            {/*Mobile navigation */}
-            <nav id="mobile-nav" ref={mobileNav} className="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out" style={mobileNavOpen ? { maxHeight: mobileNav.current.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: .8 } }>
-              <ul className="bg-gray-800 px-4 py-2">
-                <li>
-                  <Link to="/signin" className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center">Sign in</Link>
-                </li>
-                <li>
-                  <Link to="/signup" className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out">Sign up</Link>
-                </li>
-              </ul>
-            </nav>
-
-          </div>
-
-        </div>
-      </div>
-    </header>
+    <header className="header">
+		<div className="header__container">
+			<Link to="/" className="header__logo" aria-label="Hello Logo">
+				<svg width="128" height="40" viewBox="0 0 128 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0_19_2192)">
+					<path d="M24.0896 18.6667L25.4464 13.7067H31.7696C35.0976 13.7067 37.12 12.1334 38.0416 8.80002L38.5536 6.96002C39.7312 2.72002 37.8112 0.0800171 33.6128 0.0800171H6.11841L0.998413 18.6667H24.0896ZM33.5872 5.06668L32.512 9.12002H26.7264L27.8272 5.09335H33.5872V5.06668Z" fill="#F7FF13"/>
+					<path d="M40.9088 18.6667L42.5984 15.5467H50.432V18.6667H55.5776V0.0533447H45.4656L34.944 18.6667H40.9088ZM48.3072 5.12001H50.432V11.04H45.056L48.3072 5.12001Z" fill="#F7FF13"/>
+					<path d="M76.5696 8.61335L77.0304 6.93334C78.208 2.64001 76.288 0.0533447 72.0896 0.0533447H62.3104L57.1904 18.6667H62.5408L63.9488 13.5467H67.2768L68.7872 18.6667H74.2912L72.6784 13.2C74.624 12.5867 75.904 11.0667 76.5696 8.61335ZM66.2784 5.06668H72.0384L70.9632 9.09334H65.1776L66.2784 5.06668Z" fill="#F7FF13"/>
+					<path d="M81.5872 18.6667L86.7072 0.0533447H81.3312L76.2368 18.6667H81.5872Z" fill="#F7FF13"/>
+					<path d="M48.7936 21.3067L42.752 28.7467L40.2688 21.3067H17.1008L12.0064 39.9467H35.0976L37.9136 29.6533L39.7824 35.4133H43.2384L48.2304 29.28L45.2864 39.9467H50.6368L55.7312 21.3067H48.7936Z" fill="#F7FF13"/>
+					<path d="M62.8992 21.3067L52.352 39.92H58.3168L60.0064 36.8H67.84V39.92H72.9856V21.3333L62.8992 21.3067ZM62.4896 32.32L65.7152 26.4H67.84V32.32H62.4896Z" fill="#F7FF13"/>
+					<path d="M91.0848 26.64L92.544 21.3067H76.288L74.8288 26.64H80.7168L77.056 39.9467H82.4064L86.0672 26.64H91.0848Z" fill="#F7FF13"/>
+					<path d="M98.2272 26.64H106.342L107.827 21.3333H99.1744C95.8464 21.3333 93.824 22.9067 92.9024 26.24L91.008 33.04C89.8048 37.3867 91.7504 39.92 95.9488 39.92H102.682L104.141 34.6133H96.0256L98.2272 26.64Z" fill="#F7FF13"/>
+					<path d="M121.651 21.3067L119.808 27.9733H113.69L115.507 21.3067H110.157L105.062 39.9467H110.413L112.23 33.28H118.349L116.531 39.9467H121.907L127.002 21.3067H121.651Z" fill="#F7FF13"/>
+					</g>
+					<defs>
+					<clipPath id="clip0_19_2192">
+					<rect width="128" height="40" fill="white"/>
+					</clipPath>
+					</defs>
+				</svg>
+			</Link>
+			<div className="header__best">
+				<img className="header__best-img" src={HeaderBest} width="60" height="60" alt="Best of the best" />
+				<div class="header__best-text">
+					<span class="header__best-text-accent">Лучший</span> Онлайн&nbsp;букмекер
+				</div>
+			</div>
+		</div>	
+	</header>
   );
 }
 
