@@ -36,7 +36,7 @@ function Header() {
     <header className="header">
 		<div className="header__container">
 			<Link to="/" className="header__logo" aria-label="Hello Logo">
-				<svg width="128" height="40" viewBox="0 0 128 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<svg className="header__logo-img" width="128" height="40" viewBox="0 0 128 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<g clip-path="url(#clip0_19_2192)">
 					<path d="M24.0896 18.6667L25.4464 13.7067H31.7696C35.0976 13.7067 37.12 12.1334 38.0416 8.80002L38.5536 6.96002C39.7312 2.72002 37.8112 0.0800171 33.6128 0.0800171H6.11841L0.998413 18.6667H24.0896ZM33.5872 5.06668L32.512 9.12002H26.7264L27.8272 5.09335H33.5872V5.06668Z" fill="#F7FF13"/>
 					<path d="M40.9088 18.6667L42.5984 15.5467H50.432V18.6667H55.5776V0.0533447H45.4656L34.944 18.6667H40.9088ZM48.3072 5.12001H50.432V11.04H45.056L48.3072 5.12001Z" fill="#F7FF13"/>
