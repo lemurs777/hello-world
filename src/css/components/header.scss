@@ -235,6 +235,7 @@
 
         &:hover,
         &--active {
+            color: #fff;
             &:before {
                 background: #1f1f1f;
             }
@@ -246,6 +247,11 @@
             padding: rem(5px 13px);
             border: 1px solid #B7181B;
             border-radius: rem(30px);
+            font-style: italic;
+            font-weight: 700;
+            &:hover {
+                color: #B7181B;
+            }
             &:before {
                 display: none;
             }
