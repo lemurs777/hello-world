@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Header from '../partials/Header';
+import Menu from '../partials/Menu';
 import PageIllustration from '../partials/PageIllustration';
 import HeroHome from '../partials/HeroHome';
 import FeaturesBlocks from '../partials/FeaturesBlocks';
@@ -15,6 +16,7 @@ function Home() {
     <div className="flex flex-col min-h-screen overflow-hidden">
       {/*  Site header */}
       <Header />
+      <Menu />
 
       {/*  Page content */}
       <main className="grow">

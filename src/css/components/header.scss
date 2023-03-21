@@ -257,4 +257,101 @@
             }
         }
     }
+
+    &__bottom-info {
+        display: flex;
+        align-items: center;
+        gap: rem(15px);
+    }
+
+    &__bottom-time {
+        font-size: rem(14px);
+        line-height: rem(16px);
+        color: #696969;
+    }
+
+    &__bottom-apps {
+        display: flex;
+        align-items: center;
+        gap: rem(15px);
+    }
+
+    &__bottom-link-app {
+        display: inline-block;
+        border-radius: 50%;
+        font-size: 0;
+        width: rem(40px);
+        height: rem(40px);
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 50% 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &--iphone {
+            background: #fff;
+            
+            &:before {
+                width: rem(18px);
+                height: rem(21px);
+                background-image: url("../images/svg/header-app-iphone.svg");
+            }
+        }
+
+        &--android {
+            background: #7EA152;
+
+            &:before {
+                width: rem(22px);
+                height: rem(16px);
+                background-image: url("../images/svg/header-app-android.svg");
+            }
+        }
+    }
+
+    &__bottom-select-language {
+        display: flex;
+        align-items: center;
+        border: 2px solid #262626;
+        border-radius: 30px;
+        height: rem(40px);
+        padding: rem(10px 40px 9px 15px);
+        font-size: rem(18px);
+        line-height: rem(21px);
+        color: #fff;
+        position: relative;
+        cursor: pointer;
+        transition: .3s;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: rem(15px);
+            transform: translateY(-50%);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: rem(18px);
+            height: rem(18px);
+        }
+
+
+        &--ru {
+            &:before {
+                background-image: url("../images/svg/header-flag-ru.svg");
+            }
+        }
+
+        &:hover {
+            border-color: #fff;
+        }
+        
+    }
 }

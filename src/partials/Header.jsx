@@ -133,6 +133,16 @@ function Header() {
 						<Link className="header__bottom-link" to="/">Воскресенье</Link>
 					</li>
 				</ul>
+				<div className="header__bottom-info">
+					<div className="header__bottom-time">
+						17:43 (GMT+3)
+					</div>
+					<div className="header__bottom-apps">
+						<Link className="header__bottom-link-app header__bottom-link-app--iphone" to="/">Приложение для iPhone</Link>
+						<Link className="header__bottom-link-app header__bottom-link-app--android" to="/">Приложение для Android</Link>
+					</div>
+					<button className="header__bottom-select-language header__bottom-select-language--ru">RU</button>
+				</div>
 			</div>
 		</div>
 	</header>
