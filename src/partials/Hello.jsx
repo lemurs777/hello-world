@@ -19,15 +19,24 @@ function Hello() {
                 <div className="hello__img-wrapper">
                     <img className="hello__img" src={HelloBanner1} alt="Banner 1" />
                 </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className="hello__img-wrapper">
-                    <img className="hello__img" src={HelloBanner1} alt="Banner 1" />
+                <div className="hello__info-wrapper">
+                    <ul className="hello__info-list"></ul>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className="hello__img-wrapper">
                     <img className="hello__img" src={HelloBanner1} alt="Banner 1" />
+                </div>
+                <div className="hello__info-wrapper">
+                    <ul className="hello__info-list"></ul>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className="hello__img-wrapper">
+                    <img className="hello__img" src={HelloBanner1} alt="Banner 1" />
+                </div>
+                <div className="hello__info-wrapper">
+                    <ul className="hello__info-list"></ul>
                 </div>
             </SwiperSlide>
         </Swiper>

@@ -1,16 +1,44 @@
 .hello {
     width: 100%;
+    max-width: rem(1442px);
+    margin-bottom: rem(20px);
 
     &__swiper {
-        height: rem(462px);
+        height: rem(519px);
         margin-bottom: rem(15px);
     }
 
     &__img-wrapper {
         height: rem(462px);
+        position: relative;
+        margin-bottom: rem(15px);
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: rem(3px);
+            background: #262626;
+        }
     }
 
     &__img {
         object-fit: cover;
+        height: 100%;
+        width: 100%;
+        object-position: 0 50%;
+    }
+
+    &__info-wrapper {
+        padding: 0 rem(52px);
+    }
+
+    &__info-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border: 1px solid #F7FF13;
+        height: rem(42px);
     }
 }
