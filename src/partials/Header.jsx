@@ -37,7 +37,7 @@ function Header() {
 		<div className="header__container">
 			<Link to="/" className="header__logo" aria-label="Hello Logo">
 				<svg className="header__logo-img" width="128" height="40" viewBox="0 0 128 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<g clip-path="url(#clip0_19_2192)">
+					<g clipPath="url(#clip0_19_2192)">
 					<path d="M24.0896 18.6667L25.4464 13.7067H31.7696C35.0976 13.7067 37.12 12.1334 38.0416 8.80002L38.5536 6.96002C39.7312 2.72002 37.8112 0.0800171 33.6128 0.0800171H6.11841L0.998413 18.6667H24.0896ZM33.5872 5.06668L32.512 9.12002H26.7264L27.8272 5.09335H33.5872V5.06668Z" fill="#F7FF13"/>
 					<path d="M40.9088 18.6667L42.5984 15.5467H50.432V18.6667H55.5776V0.0533447H45.4656L34.944 18.6667H40.9088ZM48.3072 5.12001H50.432V11.04H45.056L48.3072 5.12001Z" fill="#F7FF13"/>
 					<path d="M76.5696 8.61335L77.0304 6.93334C78.208 2.64001 76.288 0.0533447 72.0896 0.0533447H62.3104L57.1904 18.6667H62.5408L63.9488 13.5467H67.2768L68.7872 18.6667H74.2912L72.6784 13.2C74.624 12.5867 75.904 11.0667 76.5696 8.61335ZM66.2784 5.06668H72.0384L70.9632 9.09334H65.1776L66.2784 5.06668Z" fill="#F7FF13"/>
@@ -57,31 +57,31 @@ function Header() {
 			</Link>
 			<div className="header__best">
 				<img className="header__best-img" src={HeaderBest} width="60" height="60" alt="Best of the best" />
-				<div class="header__best-text">
-					<span class="header__best-text-accent">Лучший</span> Онлайн&nbsp;букмекер
+				<div className="header__best-text">
+					<span className="header__best-text-accent">Лучший</span> Онлайн&nbsp;букмекер
 				</div>
 			</div>
 			<nav className="header__nav">
-				<menu class="header__nav-menu">
-					<li class="header__nav-item">
+				<menu className="header__nav-menu">
+					<li className="header__nav-item">
 						<Link className="header__nav-link header__nav-link--active" to="/">Спорт</Link>
 					</li>
-					<li class="header__nav-item">
+					<li className="header__nav-item">
 						<Link className="header__nav-link" to="/">Киберспорт</Link>
 					</li>
-					<li class="header__nav-item">
+					<li className="header__nav-item">
 						<Link className="header__nav-link" to="/">Казино</Link>
 					</li>
-					<li class="header__nav-item">
+					<li className="header__nav-item">
 						<Link className="header__nav-link" to="/">TV Ставки</Link>
 					</li>
-					<li class="header__nav-item">
+					<li className="header__nav-item">
 						<Link className="header__nav-link" to="/">Виртуальный спорт</Link>
 					</li>
-					<li class="header__nav-item">
+					<li className="header__nav-item">
 						<Link className="header__nav-link" to="/">Акции</Link>
 					</li>
-					<li class="header__nav-item">
+					<li className="header__nav-item">
 						<button className="header__nav-btn-show-more-link">
 							Показать другие ссылки
 							<svg className="header__nav-btn-show-more-link-svg" width="20" height="6" viewBox="0 0 20 6" fill="none" xmlns="http://www.w3.org/2000/svg">

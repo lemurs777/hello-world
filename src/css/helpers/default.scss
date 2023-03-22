@@ -65,22 +65,6 @@ textarea {
 	all: revert;
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-}
- 
-::-webkit-scrollbar-track {
-    background-color: #28293e;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: #8b8b97;
-}
-
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -158,29 +142,17 @@ main {
 }
 
 .page {
-	min-height: 100vh;
+	position: fixed;
+	top: rem(146px);
+	bottom: 0;
+	right: 0;
+	left: 0;
+	max-height: calc(100vh - #{rem(145px)});
 	display: flex;
-	flex-direction: column;
-	padding-left: rem(160);
-	padding-right: rem(160);
 	z-index: 2;
 	overflow-x: hidden;
-	position: relative;
-
-	@media (max-width: 1600px) {
-		padding-left: rem(120);
-		padding-right: rem(120);
-	}
-
-	@media (max-width: 1024px) {
-		padding-left: rem(60);
-		padding-right: rem(60);
-	}
-
-	@media (max-width: 768px) {
-		padding-left: rem(35);
-		padding-right: rem(35);
-	}
+	padding-left: rem(100px);
+	padding-right: rem(20px);
 }
 
 section,

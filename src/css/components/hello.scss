@@ -1,0 +1,16 @@
+.hello {
+    width: 100%;
+
+    &__swiper {
+        height: rem(462px);
+        margin-bottom: rem(15px);
+    }
+
+    &__img-wrapper {
+        height: rem(462px);
+    }
+
+    &__img {
+        object-fit: cover;
+    }
+}

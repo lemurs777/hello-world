@@ -11,52 +11,34 @@
     border-style: solid;
     border-color: #232323;
     width: rem(86px);
+    max-height: calc(100vh - #{rem(146px)});
+    overflow-y: scroll;
+    z-index: 5;
+
+    &::-webkit-scrollbar {
+        width: rem(5px);
+    }
+     
+    &::-webkit-scrollbar-track {
+        background-color: #28293e;
+        border-radius: rem(5px);
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        border-radius: rem(5px);
+        background: #8b8b97;
+    }
 
     &__list {
         display: flex;
         flex-direction: column;
         gap: rem(20px);
-        max-width: rem(52px);
+        max-width: rem(55px);
     }
 
     &__item {
         display: flex;
         justify-content: center;
-        @media (max-height: rem(1270px)) {
-            &:nth-child(12) {
-                display: none;
-            }
-        }
-
-        @media (max-height: rem(1200px)) {
-            &:nth-child(11) {
-                display: none;
-            }
-        }
-
-        @media (max-height: rem(1130px)) {
-            &:nth-child(10) {
-                display: none;
-            }
-        }
-
-        @media (max-height: rem(1040px)) {
-            &:nth-child(9) {
-                display: none;
-            }
-        }
-
-        @media (max-height: rem(970px)) {
-            &:nth-child(8) {
-                display: none;
-            }
-        }
-
-        @media (max-height: rem(900px)) {
-            &:nth-child(7) {
-                display: none;
-            }
-        }
     }
 
     &__item-link {
@@ -86,6 +68,7 @@
             background-position: 50% 50%;
             opacity: .6;
             transition: .3s;
+            border: 2px solid transparent;
         }
 
         &--top {
@@ -166,7 +149,7 @@
 
             &:before {
                 background-color: #000;
-                border: rem(2px) solid #F7FF13;
+                border-color: #F7FF13;
                 border-radius: rem(13px);
                 opacity: 1;
             }
@@ -186,13 +169,14 @@
     }
 
     &__more {
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 0;
-        right: 0;
+        width: 100%;
         height: rem(40px);
         background: #232323;
         font-size: 0;
+        width: rem(86px);
 
         &:before {
             content: "";
