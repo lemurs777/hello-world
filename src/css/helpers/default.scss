@@ -149,6 +149,7 @@ main {
 	left: 0;
 	max-height: calc(100vh - #{rem(145px)});
 	display: flex;
+	flex-direction: column;
 	z-index: 2;
 	overflow-x: hidden;
 	padding-left: rem(100px);

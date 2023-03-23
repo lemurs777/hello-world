@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../partials/Header';
 import Menu from '../partials/Menu';
 import Hello from '../partials/Hello';
+import Sports from '../partials/Sports';
 import PageIllustration from '../partials/PageIllustration';
 import HeroHome from '../partials/HeroHome';
 import FeaturesBlocks from '../partials/FeaturesBlocks';
@@ -22,6 +23,7 @@ function Home() {
       {/*  Page content */}
       <main className="page page--index">
         <Hello />
+        <Sports />   
       </main>
     </div>
   );
